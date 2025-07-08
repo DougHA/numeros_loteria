@@ -3,6 +3,16 @@ function sortear() {
     let de = parseInt(document.getElementById('de').value); // Valor mínimo do sorteio.
     let ate = parseInt(document.getElementById('ate').value); // Valor máximo do sorteio.
 
+    if (de >= ate) { // Verifica se o valor mínimo é maior ou igual ao valor máximo.
+        alert('O valor "Do número" deve ser menor que o valor "Até o número".'); // Exibe um alerta se a condição for verdadeira.
+        return; // Interrompe a execução da função se a condição for verdadeira.
+    }
+
+    if (quantidade > (ate - de + 1)) {
+        alert('A quantidade de números sorteados não pode ser maior que o intervalo entre os valores "Do número" e "Até o número".'); // Exibe um alerta se a quantidade for maior que o intervalo.
+        return; // Interrompe a execução da função se a condição for verdadeira.
+    }
+
 /* Coferindo se os valores adicionados estão ok.
     alert(
         'Sorteando ' + quantidade + ' números entre ' + de + ' e ' + ate + '...'
