@@ -16,13 +16,31 @@
         <div class="container__conteudo">
             <div class="container__informacoes">
                 <div class="container__texto">
-                    <h1>Sorteador<span class="container__texto-azul"> de números</span></h1>
+                    <h1>Sorteador<span class="container__texto-verde"> da Mega-Sema</span></h1>
 
+                    
                     <div class="container__campo">
                         <label class="texto__paragrafo">Quantidade de números</label>
-                        <input class="container__input" id="quantidade" type="number" min="1">
+                        <select class="container__input" id="quantidade">
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                        </select>
                     </div>
                     
+                    <!--
                     <div class="container__campo">
                         <label class="texto__paragrafo">Do número</label>
                         <input class="container__input" id="de" type="number" min="1">
@@ -32,11 +50,12 @@
                         <label class="texto__paragrafo">Até o número</label>
                         <input class="container__input" id="ate" type="number" min="1">
                     </div>
+                    -->
                 </div>
                 
                 <div class="chute container__botoes">
                     <button onclick="sortear()" id="btn-sortear" class="container__botao">Sortear</button>
-                    <button onclick="reiniciar()" id="btn-reiniciar" class="container__botao-desabilitado" >Reiniciar</button>
+                    <!-- <button onclick="reiniciar()" id="btn-reiniciar" class="container__botao-desabilitado" >Reiniciar</button> -->
                 </div>
 
                 <div class="container__texto" id="resultado">

@@ -1,7 +1,7 @@
 function sortear() {
     let quantidade = parseInt(document.getElementById('quantidade').value); // Quantidade de números que devem ser sorteados.
-    let de = parseInt(document.getElementById('de').value); // Valor mínimo do sorteio.
-    let ate = parseInt(document.getElementById('ate').value); // Valor máximo do sorteio.
+    let de = parseInt(1); // Valor mínimo do sorteio.
+    let ate = parseInt(60); // Valor máximo do sorteio.
 
     if (de >= ate) { // Verifica se o valor mínimo é maior ou igual ao valor máximo.
         alert('O valor "Do número" deve ser menor que o valor "Até o número".'); // Exibe um alerta se a condição for verdadeira.
@@ -39,7 +39,7 @@ function sortear() {
     let resultado = document.getElementById('resultado');// Variável para armazenar o resultado final.
     resultado.innerHTML = `<label class="texto__paragrafo">Números sorteados: ${numerosSorteados.join(', ')}</label>`; // Exibe os números sorteados na tela.
 
-    alterarStatusBotao(); // Chama a função para alterar o status do botão.
+   // alterarStatusBotao(); // Chama a função para alterar o status do botão.
 
 }
 
@@ -47,6 +47,7 @@ function obterNumerosAleatorios(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min; // Função que retorna um número aleatório entre o valor mínimo e máximo.
 }
 
+/*
 function alterarStatusBotao() {
     let botao = document.getElementById('btn-reiniciar'); // Obtém o botão reiniciar.
     
@@ -58,7 +59,9 @@ function alterarStatusBotao() {
         botao.classList.add('container__botao-desabilitado'); // Adiciona a classe que desabilita o botão.
     }
 }
+*/
 
+/*
 function reiniciar() {
     let resultado = document.getElementById('resultado'); // Obtém o elemento onde os resultados são exibidos.
     resultado.innerHTML = '<label class="texto__paragrafo">Números sorteados: nenhum número sorteado.</label>'; // Exibe a mensagem padrão de nenhum número sorteado.
@@ -69,3 +72,4 @@ function reiniciar() {
 
     alterarStatusBotao(); // Chama a função para alterar o status do botão.
 }
+*/
