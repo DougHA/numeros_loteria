@@ -7,7 +7,7 @@
 /* Adicione este código ao seu arquivo style.css */
 
 header {
-    background-color: #0d120d; /* Cor de fundo para o cabeçalho */
+    background-color: #120d12; /* Cor de fundo para o cabeçalho */
     padding: 1em 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     width: 100%;
@@ -34,7 +34,7 @@ header {
 }
 
 .menu-superior a:hover, .menu-superior a:focus {
-    background-color: #1c5e1c; /* Efeito ao passar o mouse */
+    background-color: #561c5e; /* Efeito ao passar o mouse */
 }
 
 /* Adiciona uma margem ao topo do conteúdo principal para não colar no menu */
@@ -43,7 +43,7 @@ main .container {
 }
 
 body {
-    background: linear-gradient(#0acb04 0%, #043212 33.33%, #043209 66.67%, #010e02 100%);
+    background: linear-gradient(#cb0496 0%, #32042a 33.33%, #32042a 66.67%, #0e010b 100%);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -76,8 +76,8 @@ main {
     align-items: center;
     justify-content: space-between;
     border-radius: 24px;
-    border: 1px solid #0acb04;
-    box-shadow: 4px 4px 20px 0px rgba(2, 14, 1, 0.15);
+    border: 1px solid #cb0496;
+    box-shadow: 4px 4px 20px 0px rgba(14, 1, 13, 0.15);
     background-image: url("img/Ruido.png");
     background-size: 100% 100%;
     position: relative;
@@ -103,7 +103,7 @@ main {
 }
 
 .container__texto-verde {
-    color: #0acb04;
+    color: #cb0496;
     display: block;
 
 }
@@ -121,7 +121,7 @@ main {
     border-radius: 16px;
     background-color: #FFF;
     border: none;
-    color: #0acb04;
+    color: #cb0496;
     padding: 1rem;
     font-size: 24px;
     font-weight: 700;
@@ -129,7 +129,7 @@ main {
 }
 
 .container__input option {
-    color:#0acb04;
+    color:#cb0496;
     font-size: 24px;
     font-weight: 700;
     font-family: 'Inter', sans-serif;   
@@ -143,7 +143,7 @@ main {
 
 .container__botao {
     border-radius: 16px;
-    background: #0acb04;
+    background: #cb0496;
     padding: 16px 24px;
     font-size: 24px;
     width: 100%;

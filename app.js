@@ -1,8 +1,15 @@
 function sortear() {
     let quantidade = parseInt(document.getElementById('quantidade').value); // Quantidade de números que devem ser sorteados.
-    let de = parseInt(1); // Valor mínimo do sorteio.
-    let ate = parseInt(60); // Valor máximo do sorteio.
+    let de = 1; // Valor mínimo do sorteio.
+    let ate;    // Valor máximo do sorteio.
 
+    // Define o valor máximo com base na página atual.
+    if (document.location.pathname.includes('lotofacil.html')) {
+        ate = 25; // LotoFácil vai de 1 a 25.
+    } else {
+        ate = 60; // Mega-Sena vai de 1 a 60.
+    }
+    
     if (de >= ate) { // Verifica se o valor mínimo é maior ou igual ao valor máximo.
         alert('O valor "Do número" deve ser menor que o valor "Até o número".'); // Exibe um alerta se a condição for verdadeira.
         return; // Interrompe a execução da função se a condição for verdadeira.
@@ -34,7 +41,7 @@ function sortear() {
         numerosSorteados.push(numero); // Adiciona o número sorteado ao array.
     }
   
-    numerosSorteados.sort((a, b) => a - b); // Ordena os números em ordem crescente
+    numerosSorteados.sort((a, b) => a - b); // Ordena os números em ordem crescente.
 
     let resultado = document.getElementById('resultado');// Variável para armazenar o resultado final.
     resultado.innerHTML = `<label class="texto__paragrafo">Números sorteados: ${numerosSorteados.join(', ')}</label>`; // Exibe os números sorteados na tela.
